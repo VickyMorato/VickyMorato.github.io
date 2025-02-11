@@ -1,5 +1,5 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -9,15 +9,15 @@
     font-family: "Poppins", sans-serif;
 }
 
-html{
+html {
     font-size: 60%;
+    overflow-x: hidden;
 }
-
-:root{
-    --bg-color:#080808;
+:root {
+    --bg-color: #080808;
     --second-bg-color: #001005;
-    --text-color: rgb(255, 255, 255);
-    --main-color: #a692eb;
+    --text-color: white;
+    --main-color: #8060d6;
 }
 
 body{
@@ -32,7 +32,7 @@ body{
     left:0;
     padding:4rem 12%;
     background: rgba(0, 0, 0, 0.3);
-    backdrop-filter:blur(10px);
+    backdrop-filter: blur(10px);
     display:flex;
     justify-content:space-between;
     align-items: center;
@@ -46,8 +46,8 @@ body{
 }
 
 .logo{
-    font-size:3rem;
-    color:var(--text-color);
+    font-size: 3rem;
+    color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
     transition:0.3s ease;
@@ -62,10 +62,10 @@ span{
 }
 
 .navbar a{
-    font: size 1.8rem;
-    color:var(--text-color);
+    font-size: 1.8rem;
+    color: var(--text-color);
     margin-left:  4rem;
-    font-weight:500;
+    font-weight: 500;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
 }
@@ -95,26 +95,26 @@ section{
 }
 
 .home-content h1{
-    font-size: 8rem;
+    font-size: 8.5rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
 }
 
 .home-content h3{
-    font-size: 4rem;
+    font-size: 2.1rem;
     margin: 1rem 0;
 }
 
 .home-content p{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.8;
 }
 
 .home-image img{
-    width: 32vw;
-    border-radius: 50%;
+    width: 17vw;
+    border-radius: 25%;
     box-shadow: 0 0 25px var(--main-color);
     transition:0.4s ease-in-out;
 }
@@ -133,7 +133,7 @@ section{
     padding: 1rem;
     background: transparent;
     border: 2px solid var(--main-color);
-    border-radius: 50%;
+    border-radius: 35%;
     color: var(--main-color);
     margin: 3rem 0.5rem;
     transition: 0.3s ease;
@@ -142,7 +142,7 @@ section{
 .social-icons a:hover{
     color: var(--text-color);
     background-color: var(--main-color);
-    transform: scale(1.2)translate(-5px);
+    transform: scale(1.2)translateY(-5px);
     box-shadow: 0 0 25px var(--main-color);
 }
 
@@ -152,12 +152,13 @@ section{
 }
 
 .btn{
-    display: inline-block;
+    display: inline-block ;
     padding: 1rem 3rem;
     background: var(--main-color);
     box-shadow:0 0 25px var(--main-color);
     border-radius: 3rem;
     font-size: 1.8rem;
+    color: black;
     border: 2px solid transparent;
     font-weight: 600;
     transition: 0.3s ease-in-out;
@@ -191,8 +192,8 @@ section{
 }
 
 .about-img img{
-    width: 32vw;
-    border-radius: 50%;
+    width: 17vw;
+    border-radius: 25%;
     box-shadow: 0 0 25px var(--main-color);
     transition:0.4s ease-in-out;
 }
@@ -204,7 +205,7 @@ section{
 }
 
 .about-content h2{
-    font-size: 7rem;
+    font-size: 8.5rem;
     text-align: left;
 }
 
@@ -217,7 +218,7 @@ section{
 }
 
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -249,7 +250,7 @@ section{
 .contact form .input-box input,
 .contact form textarea{
     width: 100%;
-    padding: 2.5rem;
+    padding: 1.5rem;
     font-size: 1.8rem;
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -294,7 +295,7 @@ section{
 }
 
 @media(max-width:1024px){
-    #meu-icon{
+    #menu-icon{
         display: block;
     }
 .navbar{
@@ -307,6 +308,7 @@ section{
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
     border-bottom-left-radius: 2rem;
+    display: none;
 }
 .navbar a{
     display:block;
@@ -314,7 +316,7 @@ section{
     margin:3rem 0;
     color: var(--text-color);
 }
-.navbar.activate{
+.navbar.active{
     display: block;
 }
 .home{

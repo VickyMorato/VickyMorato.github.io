@@ -15,9 +15,10 @@ html {
 }
 :root {
     --bg-color: #080808;
-    --second-bg-color: #001005;
+    --second-bg-color: #2d1c3a;
     --text-color: white;
     --main-color: #8060d6;
+    --text2-color: #1919254b; 
 }
 
 body{
@@ -230,12 +231,13 @@ section{
 }
 
 .contact{
-    background-color: var(--second-bg-color);
+    background-color: var(--text2-color);
 }
 
 .contact h2{
     margin-bottom: 3rem;
     color: var(--text-color);
+    font-size: 8rem;
 }
 
 .contact form{
